@@ -1,0 +1,21 @@
+html,body{
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(90deg, rgb(240, 157, 157),rgb(242, 180, 255),rgb(129, 162, 180));
+}
+#form-container{
+    height: 100vh;
+}
+label{
+    font-weight: bolder;
+}
+.panel > ul,li{
+    font-weight: bold;
+}
+.valid{
+    border: 3px solid cornflowerblue;
+}
+.invalid{
+    border: 3px dashed orangered;
+}
