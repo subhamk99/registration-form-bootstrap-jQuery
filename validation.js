@@ -20,6 +20,7 @@ $(document).ready(function(){
     });
     var validDate = new Date();
     validDate.setFullYear(validDate.getFullYear()-18);
+
     $('#dob').keyup(function () { 
         var dob = new Date(this.value);
         if(dob < validDate){
@@ -30,9 +31,12 @@ $(document).ready(function(){
             $(this).addClass('invalid');
         }
     });
-    //CODE TO BE COMPLETED
-    /*$('#submit').click(function (e) { 
-        e.preventDefault();
-        console.log()
-    });*/
+    $('#submit').click(function (e) { 
+       
+        var data = $('#reg-form').serializeArray();
+        if (new Date(data[5].value) > validDate){
+            e.preventDefault();
+            alert('You must be 18 years old to fill this form');
+        }
+    });
 });

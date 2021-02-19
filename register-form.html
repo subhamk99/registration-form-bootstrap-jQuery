@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="container-fluid p-5 " id="form-container">
-        <form>
+        <form id="reg-form" autocomplete="on" autocomplete="off">
             <!--Heading and Instructions-->
             <div class="form-group heading">
                 <p class="h1 text-center">Registration Form</p>
@@ -115,7 +115,7 @@
                 <label for="backlogs" class="col-4">No of Backlogs:</label>
                 <input id="backlogs" type="number" name="backlogs" class="form-control-sm col-3 col-md-1 backlogs" min="0" max="20"  required placeholder="0">
             </div>
-            <button id="submit" class="btn btn-primary mb-3">Submit</button>
+            <button for id="submit" class="btn btn-primary mb-3">Submit</button>
         </form>
     </div>
 </body>
